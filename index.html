@@ -196,8 +196,11 @@
 <script src="https://www.google.com/recaptcha/api.js"></script>
  
 <script>
-function onSubmit(token) {
-	document.getElementById("getStarted").submit();
+window.onload = function() { 
+  var grecap = document.getElementById('g-recaptcha-response'); 
+  if (grecap) { 
+    grecap.setAttribute('required', 'required'); 
+  } 
 }
 (function() {
   'use strict';
