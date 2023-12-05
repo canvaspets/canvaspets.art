@@ -137,14 +137,18 @@
 
 <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
 
-	<form class="needs-validation" action="https://formspree.io/f/xrgwnzzl" method="POST" enctype="multipart/form-data" novalidate>
+	<form id="getStarted" class="needs-validation" action="https://formspree.io/f/xrgwnzzl" method="POST" enctype="multipart/form-data" novalidate>
 	<div class="modal-dialog modal-dialog-centered">
     	<div class="modal-content">
       		<div class="modal-header">
-        		<h5 class="modal-title">Modal title</h5>
+        		<h5 class="modal-title">Get Started</h5>
         		<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       		</div>
       		<div class="modal-body">
+      			<div class="mb-3">
+      				<p>Please provide your name, email address, and give me an idea of what you would like me to capture for you. I will be in contact with you 
+      				shortly to discuss additional options and answer any questions you might have.</p>
+      			</div>
     			<div class="mb-3">
       				<label for="validationCustom01">Full name</label>
       				<input name="fullName" type="text" class="form-control" id="validationCustom01" placeholder="Full name" value="" required>
@@ -177,7 +181,7 @@
       		</div>
       		<div class="modal-footer">
         		<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        		<button class="btn btn-primary" type="submit">Submit</button>
+        		<button class="btn btn-primary g-recaptcha" data-sitekey="6LcnRCYpAAAAAA5dk8N3nJ4rf2A8xDH1Oo0zbG0K" data-callback="onSubmit" data-action="submit" type="submit">Submit</button>
       		</div>
     	</div>
     </div>
@@ -186,9 +190,12 @@
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-
+<script src="https://www.google.com/recaptcha/api.js"></script>
+ 
 <script>
-// Example starter JavaScript for disabling form submissions if there are invalid fields
+function onSubmit(token) {
+	document.getElementById("getStarted").submit();
+}
 (function() {
   'use strict';
   window.addEventListener('load', function() {
