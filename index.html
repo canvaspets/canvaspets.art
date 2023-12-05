@@ -179,7 +179,7 @@
       				<input name="petPhoto" type="file" accept="image/png, image/jpeg" class="form-control-file" id="validationCustom03">
     			</div>
     			<div class="mb-3">
-					<div class="g-recaptcha" data-sitekey="6LcnRCYpAAAAAA5dk8N3nJ4rf2A8xDH1Oo0zbG0K" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
+					<div class="g-recaptcha" data-sitekey="6LfHRiYpAAAAAJdFUdomlz2xmJmqn_oFkjxHhWmS" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
 				</div>
       		</div>
       		<div class="modal-footer">
@@ -196,6 +196,9 @@
 <script src="https://www.google.com/recaptcha/api.js"></script>
  
 <script>
+function onSubmit(token) {
+	document.getElementById("getStarted").submit();
+}
 (function() {
   'use strict';
   window.addEventListener('load', function() {
