@@ -21,7 +21,7 @@
     	var sizes = document.getElementsByClassName('sizeChart');
     	var sizeLinks = Array.prototype.filter.call(sizes, function(size) {
     		size.addEventListener('click', function(event) {
-    			sizeChart.src = "/~j109320/canvaspets.art/images/sizechart-"+this.id+".png";
+    			sizeChart.src = "/images/sizechart-"+this.id+".png";
     		});
     	});
   	}, false);
