@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>CANVAS PETS</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+	<link href="/css/canvaspets.css" rel="stylesheet" />
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-xl bg-body-tertiary sticky-top">
+	<div class="container">
+  		<a class="navbar-brand" href="#"><img src="/images/logo.png" class="img-fluid" alt="Canvas Pets – Custom Hand Painted Pets" /></a>
+  		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      		<span class="navbar-toggler-icon"></span>
+    	</button>
+		<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+      		<ul class="navbar-nav" id="navigation">
+				<li class="nav-item px-3 text-uppercase"><a class="nav-link text-black active" aria-current="page" href="/#about"><strong>About</strong></a></li>
+        		<li class="nav-item px-3 text-uppercase"><a class="nav-link text-black" href="/#portfolio"><strong>Portfolio</strong></a></li>
+        		<li class="nav-item px-3 text-uppercase"><a class="nav-link text-black" href="/#pricing"><strong>Pricing</strong></a></li>
+    			<li class="nav-item px-3 text-uppercase"><a class="nav-link text-black" href="/#contact"><strong>Contact</strong></a></li>
+   				<li class="nav-item px-3 text-uppercase"><button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#contactModal" data-bs-whatever="">Get Started</button></li>
+      		</ul>
+    	</div>
+  	</div>
+</nav>
+
+<div data-bs-spy="scroll" data-bs-target="#navigation" data-bs-offset="0" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+	<div class="container py-5" id="about">
+		<div class="row gy-5">
+			<div class="col-md text-center text-md-start">
+				<h2 class="text-uppercase py-3">Thank You</h2>
+				<p>Your request has been received. Will be in touch soon!</p>
+			</div>
+			<div class="col-md text-center"><img src="/images/portfolio-frame-home.png" class="img-fluid" alt="Custom Hand Painted Pets" /></div>
+		</div>
+		<div class="row py-5">
+			<blockquote class="blockquote text-center bg-dark p-3 text-white bg-opacity-50">
+				<p><i>"There is something very special about a pet in the family that only pet owners truly understand. Our pets are our family. They live with us and share our family experiences. The downside is that our pets lives are too short. To compensate for their short lives, our photographs reinforce our memories of them. Eric painted a perfect portrait of our beloved Cooper that 100% captured his heart and spirit. I was emotionally moved when I saw the portrait. I love and cherish it."</i></p>
+			</blockquote>
+			<figcaption class="blockquote-footer text-end">
+    			Kevin
+  			</figcaption>
+		</div>
+	</div>
+	<div class="container-fluid bg-black g-0 py-5">
+		<div class="container" id="contact">
+			<div class="row gy-5 justify-content-center">
+				<div class="col text-center">
+					<h2 class="text-uppercase text-light">Contact</h2>
+				</div>
+			</div>
+			<div class="row gy-5 py-3 justify-content-center">
+				<div class="col text-center">
+					<p class="text-light">
+						Eric Johnson<br/>
+						<a href="mailto:canvaspets@gmail.com" class="link-light">canvaspets@gmail.com</a>
+					</p>
+				</div>
+			</div>
+			<div class="row gy-5 justify-content-center">
+				<div class="col-2 col-md-1 text-center">
+					<a href="https://www.facebook.com/canvas.pets.art/" target="_blank"><img src="/images/icon-facebook.png" class="img-fluid" /></a>
+				</div>
+				<div class="col-2 col-md-1 text-center">
+					<a href="https://www.instagram.com/canvas.pets/"target="_blank"><img src="/images/icon-instagram.png" class="img-fluid" /></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+
+	<form id="getStarted" class="needs-validation" action="https://formspree.io/f/xrgwnzzl" method="POST" enctype="multipart/form-data" novalidate>
+	<div class="modal-dialog modal-dialog-centered">
+    	<div class="modal-content">
+      		<div class="modal-header">
+        		<h5 class="modal-title">Get Started</h5>
+        		<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      		</div>
+      		<div class="modal-body">
+      			<div class="mb-3">
+      				<p>Please provide your name, email address, and give me an idea of what you would like me to capture for you. I will be in contact with you 
+      				shortly to discuss your project and answer any questions you might have.</p>
+      			</div>
+    			<div class="mb-3">
+      				<label for="validationFullName">Full Name</label>
+      				<input name="fullName" type="text" class="form-control" id="validationFullName" placeholder="Full name" value="" required>
+			    </div>
+			    <div class="mb-3">
+			      <label for="validationEmailAddress">Email Address</label>
+			      <input name="emailAddress" type="email" class="form-control" id="validationEmailAddress" placeholder="Email address" value="" required>
+			    </div>
+				<div class="mb-3">
+    				<label for="validationProductOption">Canvas Size & Number of Pets</label>
+					<select name="productOption" class="form-control" id="validationProductOption">
+					<option>One Pet 24x30</option>
+					<option>One Pet 18x24</option>
+					<option>One Pet 16x20</option>
+					<option>One Pet 11x14</option>
+					<option>One Pet 12x12</option>
+					<option>One Pet 8x10</option>
+					<option>Two Pets 24x30</option>
+					<option>Two Pets 18x24</option>
+					<option>Two Pets 16x20</option>
+					<option>Two Pets 11x14</option>
+					<option>Two Pets 12x12</option>
+					<option>Two Pets 8x10</option>
+					<option>Other</option>
+					</select>
+    			</div>
+			    <div class="mb-3">
+      				<label for="validationDescription">Tell me what you would like to capture in your artwork</label>
+			      	<textarea name="description" type="description" class="form-control" id="validationDescription" placeholder="Description"></textarea>
+			    </div>
+    			<div class="mb-3">
+					<label for="validationPetPhoto">Upload Pet Photo</label>
+      				<input name="petPhoto" type="file" accept="image/png, image/jpeg" class="form-control-file" id="validationPetPhoto">
+    			</div>
+    			<div class="mb-3">
+					<div class="g-recaptcha" data-sitekey="6LfHRiYpAAAAAJdFUdomlz2xmJmqn_oFkjxHhWmS" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
+				</div>
+      		</div>
+      		<div class="modal-footer">
+        		<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        		<button class="btn btn-primary" type="submit">Submit</button>
+      		</div>
+    	</div>
+    </div>
+	</form>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="https://www.google.com/recaptcha/api.js"></script>
+<script src="/script/canvaspets.js"></script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-23RDQ1YX1X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-23RDQ1YX1X');
+</script>
+
+</body>
+
+</html>
